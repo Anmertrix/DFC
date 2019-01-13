@@ -1,0 +1,1366 @@
+@import "bourbon"
+
+/*==========	Desktop First Method	==========*/
+
+@media only screen and (max-width : 1600px)
+	.products_table
+		.products_table_head
+			.column_head
+				font-size: 18px
+				padding: 0 15px
+				line-height: 20px
+				&:nth-child(1)
+					font-size: 17px
+		.products_table_items
+			.products_table_item
+				.table_item_el
+					padding: 0 15px
+
+@media only screen and (max-width : 1350px)
+	.services
+		.services_items
+			.item
+				.title
+					font-size: 20px
+					line-height: 23px
+	.scheme
+		.scheme_items
+			.item
+				.num
+					font-size: 24px
+					line-height: 24px
+				.title
+					font-size: 20px
+					line-height: 24px
+	.news
+		.news_items
+			.item
+				.text_wrap
+					.title
+						font-size: 17px
+						line-height: 20px
+
+
+
+@media only screen and (max-width: 1200px)
+	.advantages
+		padding: 40px 0
+		.advantages_items
+			.item
+				padding: 0 15px
+				img
+					margin-right: 12px
+					width: 45px
+				.text
+					font-size: 17px
+					line-height: 18px
+	.services
+		padding: 50px 0 60px
+		.services_items
+			.item
+				.title
+					font-size: 17px
+					line-height: 20px
+	.scheme
+		padding: 50px 0 60px
+		.scheme_items
+			.item
+				.num
+					width: 30px
+					font-size: 20px
+					line-height: 20px
+				.title
+					font-size: 17px
+					line-height: 20px
+				.img_wrap
+					width: 100px
+					height: 100px
+					img
+						width: 45px
+	.shop_tur
+		padding: 50px 0 80px
+		.shop_tur_content
+			.shop_tur_left
+				.shop_tur_text
+					font-size: 16px
+					line-height: 20px
+					margin-bottom: 24px
+	.news
+		.news_items
+			.item
+				width: 33.33%
+				&:nth-child(4)
+					display: none
+	.page_wrap
+		.page_wrap_content
+			.page_wrap_right
+				.delivery_tables
+					.delivery_table
+						.delivery_table_items
+							.delivery_table_item
+								.delivery_table_item_content
+									div
+										&:nth-child(1)
+											width: 44%
+										&:nth-child(4)
+											width: 30%
+	.products_table
+		.products_table_head
+			.column_head
+				font-size: 16px
+				padding: 0 10px
+				line-height: 18px
+				&:nth-child(1)
+					font-size: 15px
+		.products_table_items
+			.products_table_item
+				.table_item_el
+					padding: 0 10px
+					.add_to_card
+						font-size: 17px
+	.products_page_wrap
+		.products_page_wrap_content
+			.products_title_wrap
+				margin-bottom: 70px
+			.categories
+				margin: 0 -16px 50px
+				.item
+					.title
+						font-size: 20px
+
+@media only screen and (max-width: 992px)
+	.advantages
+		.advantages_items
+			flex-wrap: wrap
+			&:after
+				content: ''
+				position: absolute
+				width: 100%
+				top: 50%
+				left: 0
+				height: 1px
+				background-color: #dcdcdc
+			.item
+				width: 50%
+				padding: 0 24px
+				img
+					width: auto
+					margin-right: 20px
+				&:nth-child(1)
+					margin-bottom: 46px
+				&:nth-child(2)
+					border-right: none
+					margin-bottom: 46px
+	.services
+		.services_items
+			.item
+				width: 33.33%
+				margin-bottom: 70px
+				.title
+					font-size: 24px
+					line-height: 28px
+	.scheme
+		.scheme_items
+			column-count: 1
+			.item
+				display: block
+				.title
+					font-size: 24px
+					line-height: 28px
+	.shop_tur
+		.shop_tur_content
+			flex-wrap: wrap
+			.shop_tur_right
+				width: 100%
+				order: -1
+				form
+					width: 100%
+					margin-bottom: 30px
+			.shop_tur_left
+				width: 100%
+				.read_more
+					text-align: right
+	.certificate
+		.certificate_items
+			width: auto
+			.slick-list
+				padding: 0!important
+	.reviews
+		.reviews_items
+			.item
+				.item_content
+					.img_wrap
+						margin-right: 30px
+					.text_wrap
+						.text
+							font-size: 16px
+							line-height: 23px
+	.news
+		.news_items
+			.item
+				width: 50%
+				&:nth-child(3)
+					display: none
+	.faq
+		.faq_items
+			column-count: 1
+	footer
+		.footer__columns
+			flex-wrap: wrap
+			.contacts_column
+				width: 33.33%
+				&:nth-child(4)
+					width: 100%
+					margin-top: 40px
+				.footer_social_list
+					display: flex
+					flex-wrap: wrap
+					justify-content: space-between
+					li
+						display: inline-block
+						margin-bottom: 15px
+
+	.login_panel
+		.login_panel_content
+			.login_panel_right
+				padding: 0 0 0 60px
+	.form_page
+		padding: 200px 0 60px
+		align-items: flex-start
+		.form_page_content
+			flex-wrap: wrap
+			.form_page_left
+				width: 100%
+				margin-bottom: 40px
+			.form_page_right
+				width: 100%
+		&.profil_page
+			.form_page_content
+				.form_page_left
+					width: 50%
+					order: -2
+					padding: 10px 0
+				.edit_btn_wrap
+					width: 50%
+					order: -1
+	.page_wrap
+		.page_wrap_content
+			.page_wrap_right
+				width: 100%
+				.page_wrap_links_mob
+					display: block
+				.balans_tables
+					.balans_table
+						.balans_table_head
+							div
+								padding: 0 8px
+								&:nth-child(1)
+									width: 20%
+								&:nth-child(2)
+									width: 18%
+								&:nth-child(3)
+									width: 24%
+								&:nth-child(4)
+									width: 24%
+								&:nth-child(5)
+									width: 24%
+						.balans_table_items
+							.balans_table_item
+								div
+									padding: 0 8px
+									&:nth-child(1)
+										width: 20%
+									&:nth-child(2)
+										width: 18%
+									&:nth-child(3)
+										width: 24%
+									&:nth-child(4)
+										width: 24%
+									&:nth-child(5)
+										width: 24%
+
+				.search_order_tables
+					.search_order_table
+						.search_order_table_head
+							div
+								&:nth-child(1)
+									width: 5%
+								&:nth-child(2)
+									width: 10%
+								&:nth-child(3)
+									width: 42%
+								&:nth-child(5)
+									width: 33%
+						.search_order_table_items
+							.search_order_table_item
+								div
+									&:nth-child(1)
+										width: 5%
+									&:nth-child(2)
+										width: 10%
+									&:nth-child(3)
+										width: 42%
+									&:nth-child(5)
+										width: 33%
+				.delivery_tables
+					.delivery_table
+						.delivery_table_items
+							.delivery_table_item
+								.delivery_table_head
+									div
+										padding: 0 5px
+										&:nth-child(1)
+											width: 33%
+										&:nth-child(2)
+											width: 16%
+										&:nth-child(3)
+											width: 11%
+										&:nth-child(4)
+											width: 13%
+										&:nth-child(5)
+											width: 11%
+										&:nth-child(6)
+											width: 16%
+										&:nth-child(7)
+											display: none
+								.delivery_table_products
+									.delivery_table_product
+										div
+											padding: 0 5px
+											&:nth-child(1)
+												width: 2%
+											&:nth-child(2)
+												width: 7%
+											&:nth-child(3)
+												width: 24%
+											&:nth-child(4)
+												width: 16%
+											&:nth-child(5)
+												width: 11%
+											&:nth-child(6)
+												width: 13%
+											&:nth-child(7)
+												width: 11%
+											&:nth-child(8)
+												width: 11%
+											&:nth-child(9)
+												width: 100%
+												order: 1
+												margin-top: 5px
+												padding: 5px 48px 5px 10px
+												background-color: #f4f4ff
+												text-align: right
+												border-right: none
+												.visible-sm
+													color: #aaaaaa
+													margin-right: 20px
+											&:nth-child(10)
+												width: 5%
+								.delivery_form_table
+									form
+										column-gap: 30px
+
+	.products_page_wrap
+		.products_page_wrap_content
+			.products_title_wrap
+				margin-bottom: 50px
+			.categories
+				margin: 0 -16px 50px
+				.item
+					width: 33.33%
+					.title
+						font-size: 24px
+	.products_table
+		.products_table_head
+			.column_head
+				font-size: 16px
+				padding: 0 10px
+				line-height: 18px
+				&:nth-child(1)
+					font-size: 15px
+		.products_table_items
+			.products_table_item
+				.table_item_el
+					padding: 0 10px
+					.add_to_card
+						font-size: 14px
+						padding: 8px 10px 5px
+
+@media only screen and (max-width: 767px)
+	.mob_menu
+    top: 80px
+	.login_panel
+		.login_panel_content
+			.login_panel_left
+				display: none
+			.login_panel_right
+				padding: 0
+				width: 100%
+				form
+					width: 100%
+					input
+						font-size: 18px
+					.forgot_pass
+						font-size: 18px
+					.buttons_wrap
+						flex-wrap: wrap
+					.submit_btn
+						width: 100%
+						margin-bottom: 30px
+					.reg_link
+						width: 100%
+						text-align: center
+	.advantages
+		.advantages_items
+			margin: 0
+			&:after
+				content: initial
+			.item
+				width: 100%
+				padding: 0 0 20px
+				border: none
+				margin-bottom: 20px!important
+				border-bottom: 1px solid #dcdcdc
+				&:last-child
+					padding: 0
+					border: none !important
+					margin-bottom: 0px!important
+	.services
+		.services_items
+			width: 240px
+			margin: 0 auto
+			.item
+				margin-bottom: 0px
+				.title
+					font-size: 22px
+					line-height: 26px
+			.slick-arrow
+				position: absolute
+				top: 100px
+				border: none
+				background: none
+				font-size: 0
+				height: 21px
+				color: #4d4c5e
+				&.slick-disabled
+					color: #a3a3a3
+				&.slick-prev
+					left: -25px
+					&:before
+						content: "\f053"
+						position: absolute
+						top: 0
+						left: 0
+						z-index: 1
+						font-size: 20px
+						font-weight: 900
+						font-family: Font Awesome\ 5 Free
+				&.slick-next
+					right: -25px
+					&:before
+						content: "\f054"
+						position: absolute
+						top: 0
+						left: 0
+						z-index: 1
+						font-size: 20px
+						font-weight: 900
+						font-family: Font Awesome\ 5 Free
+	.scheme
+		.scheme_items
+			.item
+				display: block
+				.item_content
+					flex-wrap: wrap
+					justify-content: center
+					position: relative
+				.title
+					font-size: 18px
+					line-height: 21px
+					text-align: center
+				.img_wrap
+					margin-left: 40px
+					margin-bottom: 20px
+					padding: 25px
+					img
+						top: 0
+						transform: none
+			.slick-arrow
+				position: absolute
+				top: 50px
+				border: none
+				background: none
+				font-size: 0
+				height: 21px
+				color: #fff
+				&.slick-disabled
+					color: #a3a3a3
+				&.slick-prev
+					left: 0px
+					&:before
+						content: "\f053"
+						position: absolute
+						top: 0
+						left: 0
+						z-index: 1
+						font-size: 20px
+						font-weight: 900
+						font-family: Font Awesome\ 5 Free
+				&.slick-next
+					right: 0px
+					&:before
+						content: "\f054"
+						position: absolute
+						top: 0
+						left: 0
+						z-index: 1
+						font-size: 20px
+						font-weight: 900
+						font-family: Font Awesome\ 5 Free
+
+	.shop_tur
+		.shop_tur_content
+			.shop_tur_right
+				form
+					padding: 20px 15px 30px
+					.form_title
+						color: #696969
+						font-size: 20px
+						line-height: 23px
+						margin-bottom: 30px
+					input
+						font-size: 16px
+						line-height: 19px
+			.shop_tur_left
+				.title
+					font-size: 22px
+					line-height: 26px
+				.shop_tur_day
+					font-size: 16px
+					line-height: 19px
+				.shop_tur_text
+					margin-bottom: 20px
+	.certificate
+		padding: 50px 0 70px
+		.certificate_items
+			padding: 0 20px
+			&:before
+				left: 20px
+				top: -15px
+			&:after
+				content: initial
+			.slick-arrow
+				&.slick-prev
+					left: 0px
+				&.slick-next
+					right: 0px
+	.reviews
+		.reviews_items
+			padding: 0
+			.item
+				.item_content
+					flex-wrap: wrap
+					.img_wrap
+						width: 100%
+						text-align: center
+						margin-bottom: 20px
+						img
+							display: inline-block
+					.text_wrap
+						width: 100%
+			.slick-arrow
+				top: 90px
+				transform: none
+	.news
+		padding: 50px 0
+		.news_items
+			padding: 0 10px
+			.item
+				width: 100%
+				display: block!important
+			.slick-arrow
+				position: absolute
+				top: 50%
+				border: none
+				background: none
+				font-size: 0
+				height: 21px
+				color: #4d4c5e
+				transform: translateY(-50%)
+				&.slick-disabled
+					color: #bababb
+				&.slick-prev
+					left: 5px
+					&:before
+						content: "\f053"
+						position: absolute
+						top: 0
+						left: 0
+						z-index: 1
+						font-size: 20px
+						font-weight: 900
+						font-family: Font Awesome\ 5 Free
+				&.slick-next
+					right: 5px
+					&:before
+						content: "\f054"
+						position: absolute
+						top: 0
+						left: 0
+						z-index: 1
+						font-size: 20px
+						font-weight: 900
+						font-family: Font Awesome\ 5 Free
+	.faq
+		.faq_items
+			.item
+				margin-bottom: 22px
+				.guestion
+					padding: 10px 55px 10px 20px
+					font-size: 15px
+					line-height: 18px
+					white-space: nowrap
+					overflow: hidden
+					text-overflow: ellipsis
+				.answer
+					font-size: 16px
+					line-height: 20px
+
+	footer
+		.footer__columns
+			flex-wrap: wrap
+			.contacts_column
+				width: 100%
+				margin-top: 0!important
+				margin-bottom: 40px
+				text-align: center
+				&:nth-child(3)
+					display: none
+				&:last-child
+					margin-bottom: 0
+				.footer_logo
+					margin-bottom: 0
+				.footer_contact_item
+					display: none
+				.footer_title
+					margin-bottom: 20px
+					&:after
+						left: 50%
+						transform: translateX(-50%)
+	
+	.form_page
+		padding: 150px 0 60px
+		align-items: flex-start
+		.container
+			width: 100%
+		.form_page_content
+			.form_page_right
+				form
+					.delivery_form
+						display: block
+	.page_wrap
+		padding: 150px 0 60px
+		.container
+			width: 100%
+		.page_wrap_content
+			.page_wrap_right
+				.order_tables
+					.order_table
+						.order_table_head
+							div
+								&:nth-child(1)
+									width: 33.33%
+								&:nth-child(2)
+									width: 33.33%
+								&:nth-child(3)
+									width: 33.33%
+									border-right: none
+								&:nth-child(4)
+									display: none
+								&:nth-child(5)
+									display: none
+								&:nth-child(6)
+									display: none
+						.order_table_items
+							.order_table_item
+								flex-wrap: wrap
+								div
+									&:nth-child(1)
+										width: 33.33%
+									&:nth-child(2)
+										width: 33.33%
+									&:nth-child(3)
+										width: 33.33%
+										border-right: none
+									&:nth-child(4)
+										width: 100%
+										border-right: none
+										text-align: right
+										margin-top: 4px
+										border-top: 1px solid #e4e4e4
+									&:nth-child(5)
+										width: 100%
+										border-right: none
+										text-align: right
+										margin-top: 4px
+										border-top: 1px solid #e4e4e4
+									&:nth-child(6)
+										width: 100%
+										border-right: none
+										text-align: right
+										margin-top: 4px
+										border-top: 1px solid #e4e4e4
+									&:nth-child(7)
+										width: 100%
+										border-right: none
+										text-align: center
+										padding: 5px 10px 3px
+										border: 1px solid #bdbcc8
+										margin-bottom: 20px
+										.show_order
+											display: inline-block
+				.balans_tables
+					.balans_table
+						.balans_table_head
+							display: none
+						.balans_table_items
+							.balans_table_item
+								border: none
+								padding: 0
+								flex-wrap: wrap
+								margin-bottom: 25px
+								div
+									padding: 2px 8px
+									width: 100%!important
+									display: flex
+									border-right: none
+									border-bottom: 1px solid #e5e5e5
+									justify-content: space-between
+									&:nth-child(1)
+										background-color: #edecf5
+				.delivery_tables
+					.delivery_table
+						.delivery_table_items
+							.delivery_table_item
+								.delivery_table_direction
+									flex-wrap: wrap
+									div
+										width: 100%
+										display: flex
+										align-items: center
+										justify-content: space-between
+										.arrow_right
+											width: 22px
+											height: 8px
+											margin: 0 8px
+										&:nth-child(2)
+											border-top: 1px solid #e4e4e4
+								.delivery_table_head_2
+									display: none
+								.delivery_table_item_content
+									padding: 0
+									border-bottom: none
+									div
+										color: #545454
+										font-size: 14px
+										border-right: none
+										&:nth-child(1)
+											width: 100%
+											border-bottom: 1px solid #e4e4e4
+											.visible-xs
+												width: 100%
+												color: #919191
+										&:nth-child(2)
+											width: 100%
+											display: flex
+											justify-content: space-between
+											border-bottom: 1px solid #e4e4e4
+											.visible-xs
+												color: #919191
+										&:nth-child(3)
+											width: 100%
+											display: flex
+											justify-content: space-between
+											border-bottom: 1px solid #e4e4e4
+											.visible-xs
+												color: #919191
+										&:nth-child(4)
+											width: 100%
+											color: #919191
+											padding-top: 3px
+											padding-bottom: 3px
+										&:nth-child(5)
+											order: 1
+											width: 100%
+											border-right: none
+											text-align: center
+											padding: 5px 10px 3px
+											border: 1px solid #bdbcc8
+											.show_order
+												display: inline-block
+										&:nth-child(6)
+											width: 100%
+											margin-top: 0
+											padding-top: 3px
+											padding-bottom: 3px
+				.search_order_tables
+					.search_order_table
+						.search_order_table_head
+							flex-wrap: wrap
+							div
+								&:nth-child(1)
+									width: 8%
+								&:nth-child(2)
+									width: 20%
+								&:nth-child(3)
+									width: 72%
+									border: none
+								&:nth-child(4)
+									display: none
+								&:nth-child(5)
+									display: none
+						.search_order_table_items
+							.search_order_table_item
+								flex-wrap: wrap
+								div
+									&:nth-child(1)
+										width: 8%
+									&:nth-child(2)
+										width: 20%
+									&:nth-child(3)
+										width: 72%
+										line-height: 18px
+										border: none
+									&:nth-child(4)
+										width: 100%
+										display: flex
+										margin-top: 5px
+										padding: 5px 10px
+										border-right: none
+										justify-content: space-between
+										border-top: 1px solid #e4e4e4
+										border-bottom: 1px solid #e4e4e4
+									&:nth-child(5)
+										width: 100%
+										.visible-xs
+											padding: 5px 10px
+											background-color: #f4f4ff
+											margin: 0 -10px
+						.delivery_order_table
+							flex-wrap: wrap
+							.delivery_order_table_column
+								width: 100%
+				.delivery_tables
+					.delivery_table
+						.delivery_table_date
+							flex-wrap: wrap
+							>span
+								width: 100%
+								display: block
+						.delivery_table_items
+							.delivery_table_item
+								.delivery_table_head
+									display: none
+								.delivery_table_products
+									.delivery_table_product
+										div
+											&:nth-child(1)
+												width: 2%
+											&:nth-child(2)
+												width: 15%
+											&:nth-child(3)
+												width: 75%
+												border: none
+											&:nth-child(4)
+												width: 100%
+												border: none
+												margin-top: 5px
+												padding: 5px
+												border-bottom: 1px solid #e4e4e4
+												.visible-xs
+													padding: 7px
+													color: #a9a9a9
+													margin-bottom: 5px
+													background-color: #f3f4ff
+												input
+													width: 100%
+													line-height: 20px
+											&:nth-child(5)
+												width: 100%
+												border: none
+												padding: 5px
+												display: flex
+												justify-content: space-between
+												border-bottom: 1px solid #e4e4e4
+												.visible-xs
+													color: #c7c7c7
+												input
+													width: 50%
+													line-height: 20px
+											&:nth-child(6)
+												width: 100%
+												border: none
+												padding: 5px
+												display: flex
+												justify-content: space-between
+												border-bottom: 1px solid #e4e4e4
+												.visible-xs
+													color: #c7c7c7
+												input
+													width: 60px
+													line-height: 20px
+											&:nth-child(7)
+												width: 100%
+												border: none
+												padding: 5px
+												display: flex
+												justify-content: space-between
+												border-bottom: 1px solid #e4e4e4
+												.visible-xs
+													color: #c7c7c7
+												input
+													width: 60px
+													line-height: 20px
+											&:nth-child(8)
+												width: 100%
+												border: none
+												padding: 5px
+												display: flex
+												justify-content: space-between
+												border-bottom: 1px solid #e4e4e4
+												.visible-xs
+													color: #c7c7c7
+											&:nth-child(9)
+												width: 100%
+												order: 1
+												margin-top: 5px
+												padding: 5px
+												background-color: #f4f4ff
+												text-align: right
+												border-right: none
+												display: flex
+												justify-content: space-between
+												.visible-sm
+													color: #aaaaaa
+													margin-right: 20px
+											&:nth-child(10)
+												width: 100%
+												text-align: center
+												order: 2
+												line-height: 27px
+												margin-top: 2px
+												border: 1px solid #dd3c57
+												a
+													color: #dd3c57
+								.delivery_table_footer
+									div
+										&:nth-child(1)
+											display: none
+										&:nth-child(2)
+											border: none
+											width: auto
+										&:nth-child(3)
+											display: none
+										&:nth-child(4)
+											display: none
+										&:nth-child(5)
+											display: none
+										&:nth-child(6)
+											border: none
+											width: auto
+								.add_product_mob
+									color: #4d4c5e
+									font-family: "Bebas Neue"
+									font-size: 18px
+									font-weight: 400
+									line-height: 27px
+									border: 1px solid #bdbcc8
+									text-align: center
+									margin-bottom: 20px
+								.delivery_form_table
+									padding: 15px 10px
+									form
+										column-count: 1
+										.input_control
+											.input_control_content
+												flex-wrap: wrap
+												.label
+													display: block
+													font-size: 14px
+													width: 100%
+													line-height: 20px
+												input
+													margin-bottom: 20px
+													font-size: 16px
+												select
+													margin-bottom: 20px
+													font-size: 16px
+				.delivery_table_buttons_wrap
+					flex-wrap: wrap
+					.total_value
+						width: 100%
+						display: flex
+						justify-content: space-between
+						margin-bottom: 15px
+					.delivery_table_button
+						width: 100%
+
+
+	.page_wrap
+		&.poisk_tov
+			.page_wrap_content
+				.page_wrap_right
+					.title_wrap
+						flex-wrap: wrap
+						.title
+							width: 100%
+							display: flex
+							justify-content: space-between
+					.close_order
+						order: -1
+						width: 100%
+						text-align: right
+						margin-bottom: 20px
+	.comments_wrap
+		h2
+			font-size: 18px
+			line-height: 21px
+			margin-bottom: 30px
+		.comments
+			.comment
+				.comment_content
+					.comment_info
+						grid-template-columns: 63px 1fr
+						.photo_wrap
+							width: 45px
+							height: 45px
+							grid-column: 1
+							grid-row: 1 / 2
+							margin-right: 18px
+						.comment_head
+							.name
+								width: 100%
+								margin-bottom: 5px
+								display: inline-block
+						.text
+							grid-column: 1/3
+					.comment_footer
+						.reply
+							margin-top: 15px
+							display: inline-block
+							padding-right: 0
+
+	.products_page_wrap
+		padding: 150px 0 90px
+		.products_page_wrap_content
+			.products_title_wrap
+				.title
+					font-size: 32px
+					line-height: 48px
+				.products_count
+					font-size: 17px
+					line-height: 20px
+		.products_page_wrap_content
+			.categories
+				width: 290px
+				max-width: 100%
+				margin: 0 auto 50px
+				.item
+					width: 147px!important
+					margin-bottom: 0
+					.title
+						font-size: 18px
+				.slick-arrow
+					position: absolute
+					top: 45px
+					border: none
+					background: none
+					font-size: 0
+					height: 21px
+					color: #4d4c5e
+					&.slick-disabled
+						color: #a3a3a3
+					&.slick-prev
+						left: -25px
+						&:before
+							content: "\f053"
+							position: absolute
+							top: 0
+							left: 0
+							z-index: 1
+							font-size: 20px
+							font-weight: 900
+							font-family: Font Awesome\ 5 Free
+					&.slick-next
+						right: -25px
+						&:before
+							content: "\f054"
+							position: absolute
+							top: 0
+							left: 0
+							z-index: 1
+							font-size: 20px
+							font-weight: 900
+							font-family: Font Awesome\ 5 Free
+	.products_table
+		.products_table_head
+			.column_head
+				&:nth-child(1)
+					width: 8%
+				&:nth-child(2)
+					width: 32%
+				&:nth-child(3)
+					width: 60%
+					border-right: none
+				&:nth-child(4)
+					display: none
+				&:nth-child(5)
+					display: none
+				&:nth-child(6)
+					display: none
+		.products_table_items
+			.products_table_item
+				flex-wrap: wrap
+				.table_item_el
+					border-right: none
+					&:nth-child(1)
+						width: 8%
+					&:nth-child(2)
+						width: 32%
+					&:nth-child(3)
+						width: 60%
+					&:nth-child(4)
+						width: 100%
+						flex-direction: row
+						justify-content: space-between
+						border-top: 1px solid #e3e3e3
+						margin-top: 5px
+						padding: 5px
+						.visible-xs
+							width: 50%
+							color: #5e5e5e
+							font-family: "Bebas Neue"
+							font-size: 18px
+							font-weight: 400
+							line-height: 21px
+							padding-right: 5px
+							border-right: 1px solid #e3e3e3
+					&:nth-child(5)
+						width: 100%
+						flex-direction: row
+						justify-content: space-between
+						border-top: 1px solid #e3e3e3
+						margin-top: 5px
+						padding: 5px
+						input
+							width: 50%
+						.visible-xs
+							width: 50%
+							color: #5e5e5e
+							font-family: "Bebas Neue"
+							font-size: 18px
+							font-weight: 400
+							line-height: 21px
+							padding-right: 5px
+							border-right: 1px solid #e3e3e3
+					&:nth-child(6)
+						width: 100%
+						border-top: 1px solid #e3e3e3
+						margin-top: 5px
+						padding: 10px 5px 5px
+
+@media only screen and (max-width: 480px)
+	.mob_menu
+		padding: 40px 20px
+		.mobile_menu
+			ul
+				li
+					&:after
+						letter-spacing: 1px
+					a
+						font-size: 20px
+						line-height: 42px
+						letter-spacing: 1px
+		.icons_wrap
+			margin-top: 60px
+			.social_links
+				li
+					margin: 0 10px
+
+	footer
+		.footer__columns
+			.contacts_column
+				.footer_social_list
+					li
+						width: 50%
+
+	.form_page
+		.form_page_content
+			.form_page_right
+				.user_info
+					flex-wrap: wrap
+					.photo_wrap
+						margin-bottom: 20px
+					.text_wrap
+						width: 100%
+				form
+					.registration_form
+						display: block
+						div
+					input
+						font-size: 18px
+						line-height: 21px
+						margin-bottom: 25px
+					select
+						margin-bottom: 25px
+					textarea
+						margin-bottom: 10px
+					.checkbox_label
+						margin-bottom: 25px
+					.submit_btn_wrap
+						justify-content: center
+					.submit_btn
+						width: 100%
+					.submit_btn_wrap_2
+						.submit_btn
+							width: 100%
+					.login_form
+						.password_field
+							input
+								padding-right: 80px
+							.forgot_pass
+								font-size: 16px
+								line-height: 21px
+			.edit_btn_wrap
+				a
+					width: 38px
+					height: 38px
+					font-size: 0
+					text-align: center
+					padding: 8px 5px 6px
+					i
+						font-size: 18px
+						margin-right: 0
+
+	.page_wrap
+		.page_wrap_content
+			.page_wrap_right
+				.page_wrap_links_mob
+					li
+						padding: 0 10px
+						a
+							font-size: 14px
+				.title_wrap
+					margin-bottom: 40px
+					.title
+						font-size: 20px
+						line-height: 23px
+					.count
+						font-size: 20px
+						line-height: 23px
+					.create_order
+						font-size: 17px
+						padding: 7px 20px 4px
+				.sort_wrap
+					flex-wrap: wrap
+					.date_sort
+						margin-bottom: 10px
+						width: 100%
+					.search_sort
+						width: 100%
+				.search_tables
+					.search_table
+						.search_table_head
+							padding: 7px 8px
+							.date, .count
+								font-size: 14px
+								line-height: 16px
+						.search_table_items
+							.search_table_item
+								padding: 7px 8px
+								.title
+									font-size: 14px
+									line-height: 16px
+								.status
+									font-size: 14px
+									line-height: 16px
+									.staus_title
+										display: none
+				.order_tables
+					.order_table
+						.order_table_head
+							div
+								&:nth-child(1)
+									width: 33.33%
+								&:nth-child(2)
+									width: 33.33%
+								&:nth-child(3)
+									width: 33.33%
+									border-right: none
+								&:nth-child(4)
+									display: none
+								&:nth-child(5)
+									display: none
+								&:nth-child(6)
+									display: none
+						.order_table_items
+							.order_table_item
+								flex-wrap: wrap
+								div
+									&:nth-child(1)
+										width: 33.33%
+									&:nth-child(2)
+										width: 33.33%
+									&:nth-child(3)
+										width: 33.33%
+										border-right: none
+									&:nth-child(4)
+										width: 100%
+										border-right: none
+										text-align: right
+										margin-top: 4px
+										border-top: 1px solid #e4e4e4
+									&:nth-child(5)
+										width: 100%
+										border-right: none
+										text-align: right
+										margin-top: 4px
+										border-top: 1px solid #e4e4e4
+									&:nth-child(6)
+										width: 100%
+										border-right: none
+										text-align: right
+										margin-top: 4px
+										border-top: 1px solid #e4e4e4
+									&:nth-child(7)
+										width: 100%
+										border-right: none
+										text-align: center
+										border: 1px solid #bdbcc8
+
+	.comments_wrap
+		.comment_btn_wrap
+			.send_comment
+				width: 100%
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 360px)
+	/* */
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px)
+	.visible-xs
+		display: none !important
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px)
+	.visible-sm
+		display: none !important
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px)
+	/**/
+
