@@ -5,6 +5,17 @@
 
 	<section id="page_wrap" class="page_wrap">
 		<div class="container">
+			<div class="breadcrumbs_wrap">
+				<div class="breadcrumbs" vocab="http://schema.org/" typeof="BreadcrumbList">
+					<!-- Breadcrumb NavXT 6.2.1 -->
+					<span property="itemListElement" typeof="ListItem">
+						<a property="item" typeof="WebPage" title="Главная" href="https://mydomen.com" class="home">
+							<span property="name">Главная</span>
+						</a>
+						<meta property="position" content="1">
+						</span> / Заявки на доставку товаров
+				</div>
+			</div>
 			<div class="page_wrap_content">
 				<div class="page_wrap_left hidden-sm hidden-xs">
 					<div class="page_wrap_title">Ваши заявки</div>
@@ -29,6 +40,11 @@
 						</div>
 						<div class="search_sort">
 							<input type="text" placeholder="Поиск">
+							<i class="fas fa-chevron-down"></i>
+							<ul>
+								<li>Выкуплено</li>
+								<li>Не выкупался</li>
+							</ul>
 						</div>
 					</div>
 					<div class="delivery_tables">

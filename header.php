@@ -12,11 +12,10 @@
 				<nav class="head_menu">
 					<ul>
 						<li><a href="#">Главная</a></li>
-						<li><a href="#">Услуги</a>
+						<li class="menu-item-has-children"><a href="#">Услуги</a>
 							<ul class="sub-menu">
 								<li><a href="#">Поиск товара и поставщика</a></li>
 								<li><a href="#">OEM производство</a></li>
-								<li><a href="#">Доставка оптовых заказов</a></li>
 								<li><a href="#">Таможенная очистка</a></li>
 								<li><a href="#">Сопровождение на выставках</a></li>
 								<li><a href="#">Переводчик в Китае</a></li>
@@ -26,12 +25,13 @@
 						<li><a href="#">Оплата</a></li>
 						<li><a href="#">Товары</a></li>
 						<li><a href="#">Доставка</a></li>
-						<li><a href="#">О компании</a>
+						<li class="menu-item-has-children"><a href="#">О компании</a>
 							<ul class="sub-menu">
 								<li><a href="#">О нас</a></li>
 								<li><a href="#">Стоимости услуги</a></li>
 								<li><a href="#">Вопросы и Ответы</a></li>
 								<li><a href="#">Новости</a></li>
+								<li><a href="#">Отзывы</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -71,7 +71,6 @@
 					<ul class="sub-menu">
 						<li><a href="#">Поиск товара и поставщика</a></li>
 						<li><a href="#">OEM производство</a></li>
-						<li><a href="#">Доставка оптовых заказов</a></li>
 						<li><a href="#">Таможенная очистка</a></li>
 						<li><a href="#">Сопровождение на выставках</a></li>
 						<li><a href="#">Переводчик в Китае</a></li>
@@ -87,6 +86,7 @@
 						<li><a href="#">Стоимости услуги</a></li>
 						<li><a href="#">Вопросы и Ответы</a></li>
 						<li><a href="#">Новости</a></li>
+						<li><a href="#">Отзывы</a></li>
 					</ul>
 				</li>
 				<li><a href="#">нОВОСТи</a></li>

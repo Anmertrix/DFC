@@ -5,6 +5,17 @@
 
 	<section id="form_page" class="form_page">
 		<div class="container">
+			<div class="breadcrumbs_wrap">
+				<div class="breadcrumbs" vocab="http://schema.org/" typeof="BreadcrumbList">
+					<!-- Breadcrumb NavXT 6.2.1 -->
+					<span property="itemListElement" typeof="ListItem">
+						<a property="item" typeof="WebPage" title="Главная" href="https://mydomen.com" class="home">
+							<span property="name">Главная</span>
+						</a>
+						<meta property="position" content="1">
+						</span> / Регистрация
+				</div>
+			</div>
 			<div class="form_page_content">
 				<div class="form_page_left hidden-sm hidden-xs">
 					<div class="form_page_title">Добро пожаловать</div>

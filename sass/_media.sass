@@ -32,13 +32,12 @@
 				.title
 					font-size: 20px
 					line-height: 24px
-	.news
-		.news_items
-			.item
-				.text_wrap
-					.title
-						font-size: 17px
-						line-height: 20px
+	.news_items
+		.item
+			.text_wrap
+				.title
+					font-size: 17px
+					line-height: 20px
 
 
 
@@ -85,10 +84,12 @@
 					font-size: 16px
 					line-height: 20px
 					margin-bottom: 24px
+	.news_items
+		.item
+			width: 33.33%
 	.news
 		.news_items
 			.item
-				width: 33.33%
 				&:nth-child(4)
 					display: none
 	.page_wrap
@@ -127,6 +128,7 @@
 				.item
 					.title
 						font-size: 20px
+
 
 @media only screen and (max-width: 992px)
 	.advantages
@@ -195,20 +197,40 @@
 						.text
 							font-size: 16px
 							line-height: 23px
-	.news
+	.news_items
+		.item
+			width: 50%
+	.news	
 		.news_items
 			.item
-				width: 50%
 				&:nth-child(3)
 					display: none
 	.faq
 		.faq_items
-			column-count: 1
+			flex-wrap: wrap
+			.faq_items_column
+				width: 100%
 	footer
 		.footer__columns
 			flex-wrap: wrap
 			.contacts_column
-				width: 33.33%
+				width: 100%
+				margin-top: 0!important
+				margin-bottom: 40px
+				text-align: center
+				&:nth-child(3)
+					display: none
+				&:last-child
+					margin-bottom: 0
+				.footer_logo
+					margin-bottom: 0
+				.footer_contact_item
+					display: none
+				.footer_title
+					margin-bottom: 20px
+					&:after
+						left: 50%
+						transform: translateX(-50%)
 				&:nth-child(4)
 					width: 100%
 					margin-top: 40px
@@ -247,6 +269,16 @@
 		.page_wrap_content
 			.page_wrap_right
 				width: 100%
+				.title_wrap
+					.not_read
+						display: block
+						color: #dd3c57
+						font-size: 16px
+						line-height: 19px
+				.search_perepiski
+					margin-bottom: 28px
+					input
+						width: 100%
 				.page_wrap_links_mob
 					display: block
 				.balans_tables
@@ -359,15 +391,21 @@
 								.delivery_form_table
 									form
 										column-gap: 30px
+	.page_wrap
+		&.page_perepiski
+			.page_wrap_content
+				.page_wrap_right
+					.page_wrap_links_mob
+						li
+							width: 32%
 
 	.products_page_wrap
 		.products_page_wrap_content
 			.products_title_wrap
 				margin-bottom: 50px
 			.categories
-				margin: 0 -16px 50px
+				margin: 0 -16px 100px
 				.item
-					width: 33.33%
 					.title
 						font-size: 24px
 	.products_table
@@ -378,13 +416,99 @@
 				line-height: 18px
 				&:nth-child(1)
 					font-size: 15px
+				&:nth-child(4)
+					text-align: center
 		.products_table_items
 			.products_table_item
 				.table_item_el
 					padding: 0 10px
+					font-size: 14px
 					.add_to_card
 						font-size: 14px
 						padding: 8px 10px 5px
+					&:nth-child(4)
+						text-align: center
+
+	.single_news_page_wrap
+		.h1_title
+			margin-bottom: 50px
+		.page_wrap_content
+			flex-wrap: wrap
+			.page_wrap_left
+				width: 100%
+				margin-bottom: 10px
+			.page_wrap_right
+				width: 100%
+				.featured_news
+					margin-top: 100px
+					.news_items
+						.item
+							width: 50%
+
+	.remodal
+		width: 768px
+
+	body
+		.remodal-wrapper
+			.remodal
+				.modal-content
+					.modal_content_wrap
+						flex-wrap: wrap
+						margin: 0 0 20px
+						padding: 0 15px
+						.left_wrap
+							width: 100%
+							.thubn_items
+								width: 84px
+								img
+									margin-bottom: 19px
+							.modal_prod_slides
+								width: calc(100% - 102px)
+						.right_wrap
+							width: 100%
+					.characteristic
+						.items
+							padding-left: 0
+							.item
+								.param_value
+									width: 35%
+	.video_reviews
+		.video_reviews_items
+			.item
+				i
+					opacity: .6
+	.reviews_block
+		.reviews_block_items
+			.item
+				.image_wrap
+					padding: 0 30px 0 0
+				.text_wrap
+					width: 100%
+					flex-shrink: 1
+	.reviews_block
+		.reviews_control
+			border: none
+			padding: 0
+			margin-bottom: 30px
+			justify-content: center
+			.sort_wrap
+				display: none
+		.write_review
+			.input_wrap
+				flex-wrap: wrap
+				.input_item
+					width: 100%
+					margin-bottom: 25px
+					&:last-child
+						margin-bottom: 0
+			.button_wrap
+				flex-wrap: wrap
+				.form_info
+					width: 100%
+					font-size: 13px
+				.submit_btn
+					margin-left: auto
+
 
 @media only screen and (max-width: 767px)
 	.mob_menu
@@ -573,11 +697,32 @@
 				transform: none
 	.news
 		padding: 50px 0
-		.news_items
-			padding: 0 10px
-			.item
+		.news_title_wrap
+			flex-wrap: wrap
+			justify-content: center
+			h2
 				width: 100%
-				display: block!important
+				text-align: center
+				margin-bottom: 0px
+			.all_news
+				margin-bottom: 20px
+		.news_items
+			width: 335px
+			margin: 0 auto
+			max-width: 100%
+	
+	.news_items
+		.item
+			width: 100%
+			margin-bottom: 30px
+			display: block!important
+	.news_page_wrap
+		padding: 135px 0 130px
+		.news_page_wrap_content
+			.news_title_wrap
+				margin-bottom: 40px
+	.news
+		.news_items
 			.slick-arrow
 				position: absolute
 				top: 50%
@@ -590,7 +735,7 @@
 				&.slick-disabled
 					color: #bababb
 				&.slick-prev
-					left: 5px
+					left: -5px
 					&:before
 						content: "\f053"
 						position: absolute
@@ -601,7 +746,7 @@
 						font-weight: 900
 						font-family: Font Awesome\ 5 Free
 				&.slick-next
-					right: 5px
+					right: -5px
 					&:before
 						content: "\f054"
 						position: absolute
@@ -647,6 +792,9 @@
 					&:after
 						left: 50%
 						transform: translateX(-50%)
+				.footer_social_list
+					li
+						width: 50%
 	
 	.form_page
 		padding: 150px 0 60px
@@ -664,6 +812,75 @@
 			width: 100%
 		.page_wrap_content
 			.page_wrap_right
+				.perepiski_table_bottom
+					flex-wrap: wrap
+					padding: 10px
+					.sorted_for
+						margin-bottom: 20px
+					.pagination_wrap
+						width: 100%
+						justify-content: space-between
+				.perepiski_tables
+					.perepiski_table
+						.perepiski_table_head
+							display: none
+						.perepiski_table_items
+							.perepiski_table_item
+								margin-bottom: 30px
+								flex-wrap: wrap
+								div
+									&.mob_head_1
+										padding: 9px 10px
+										width: 100%
+										margin-bottom: 10px
+										color: #919191
+										font-size: 15px
+										line-height: 18px
+										background-color: #edecf5
+										border: none
+									&.mob_heads
+										width: 100%
+										padding: 9px 0
+										color: #919191
+										font-size: 15px
+										line-height: 18px
+										background-color: #edecf5
+										border: none
+										margin-bottom: 10px
+										display: flex!important
+										span
+											width: 33.33%
+											padding: 0 10px
+											display: inline-block
+											border-right: 1px solid #e4e4e4
+											&:last-child
+												border: none
+									&:nth-child(2)
+										width: 100%
+										padding-bottom: 5px
+										border-bottom: 1px solid #e4e4e4
+									&:nth-child(3)
+										width: 100%
+										padding: 5px 10px 0
+										display: flex
+										border-bottom: 1px solid #e4e4e4
+										.mob_title
+											width: 80px
+											margin-right: 10px
+											flex-shrink: 0
+											display: block
+											color: #aaaaaa
+											font-weight: 400
+											border-right: 1px solid #e4e4e4
+											&+span
+												width: calc(100% - 90px)
+									&:nth-child(5)
+										width: 33.33%
+										padding-top: 5px
+									&:nth-child(6)
+										width: 33.33%
+									&:nth-child(7)
+										width: 33.33%
 				.order_tables
 					.order_table
 						.order_table_head
@@ -863,6 +1080,7 @@
 									display: none
 								.delivery_table_products
 									.delivery_table_product
+										padding: 10px 0 30px
 										div
 											&:nth-child(1)
 												width: 2%
@@ -1004,7 +1222,20 @@
 						margin-bottom: 15px
 					.delivery_table_button
 						width: 100%
-
+	.page_wrap
+		&.page_perepiski
+			.page_wrap_content
+				.page_wrap_right
+					.title_wrap
+						flex-wrap: wrap
+						.not_read
+							width: 100%
+					.page_wrap_links_mob
+						li
+							width: 100%
+							border-bottom: 1px solid #e0e0e0
+							&:last-child
+								border: none
 
 	.page_wrap
 		&.poisk_tov
@@ -1064,44 +1295,12 @@
 			.categories
 				width: 290px
 				max-width: 100%
-				margin: 0 auto 50px
+				margin: 0 auto 100px
 				.item
 					width: 147px!important
 					margin-bottom: 0
 					.title
 						font-size: 18px
-				.slick-arrow
-					position: absolute
-					top: 45px
-					border: none
-					background: none
-					font-size: 0
-					height: 21px
-					color: #4d4c5e
-					&.slick-disabled
-						color: #a3a3a3
-					&.slick-prev
-						left: -25px
-						&:before
-							content: "\f053"
-							position: absolute
-							top: 0
-							left: 0
-							z-index: 1
-							font-size: 20px
-							font-weight: 900
-							font-family: Font Awesome\ 5 Free
-					&.slick-next
-						right: -25px
-						&:before
-							content: "\f054"
-							position: absolute
-							top: 0
-							left: 0
-							z-index: 1
-							font-size: 20px
-							font-weight: 900
-							font-family: Font Awesome\ 5 Free
 	.products_table
 		.products_table_head
 			.column_head
@@ -1168,6 +1367,132 @@
 						border-top: 1px solid #e3e3e3
 						margin-top: 5px
 						padding: 10px 5px 5px
+	.news_bottom
+		justify-content: center
+		.news_count
+			display: none
+		.pagination_wrap
+			a
+				&.prew, &.next
+					width: 60px
+					border: none!important
+					&.disable
+						color: #adadad
+
+	.remodal
+		width: 100%
+		padding: 40px 25px
+	.remodal-close
+		top: 42px
+		right: 25px
+	body
+		.remodal-wrapper
+			.remodal
+				.modal-content
+					.modal_content_wrap
+						padding: 0
+						.left_wrap
+							padding: 0
+							margin-bottom: 35px
+							.thubn_items
+								display: none
+							.modal_prod_slides
+								width: 100%
+						.right_wrap
+							padding: 0
+							.title
+								font-size: 22px
+								line-height: 28px
+								letter-spacing: 0.66px
+							.meta
+								flex-wrap: wrap
+								.add_to_card
+									width: 100%
+								.price_wrap
+									margin-bottom: 10px
+							.params_list
+								li
+									font-size: 14px
+									b
+										font-size: 16px
+							.input_wrap
+								.label
+									font-size: 15px
+					.characteristic
+						.items
+							padding-left: 0
+							.item
+								flex-wrap: wrap
+								padding: 0
+								margin-bottom: 20px
+								.param_value
+									width: 100%
+									padding: 0
+								.param_title
+									width: 100%
+									padding: 0
+								.line
+									display: none
+	.video_reviews
+		padding: 0 20px 40px
+		h2
+			margin-bottom: 25px
+		.video_reviews_items
+			.slick-arrow
+				&.slick-prev
+					left: -20px
+				&.slick-next
+					right: -20px
+	.letters
+		padding: 20px 20px 50px
+		h2
+			margin-bottom: 25px
+		.letters_items
+			.item
+				text-align: center
+				img
+					display: inline-block
+			.slick-arrow
+				&.slick-prev
+					left: -20px
+				&.slick-next
+					right: -20px
+	.reviews_block
+		.title_wrap
+			margin-bottom: 30px
+			flex-wrap: wrap
+			h2
+				width: 100%
+				margin-bottom: 15px
+			.write_review
+				padding: 0
+				color: #dd3c57
+				min-width: 100px
+				background-color: transparent
+				&:hover
+					background-color: transparent
+		.reviews_block_items
+			.item
+				flex-wrap: wrap
+				.image_wrap
+					width: 100%
+					text-align: center
+					margin-bottom: 25px
+				.text_wrap
+					.text_title_wrap
+						flex-wrap: wrap
+						.title
+							width: 100%
+						.date
+							width: 100%
+							order: -1
+							margin-bottom: 10px
+		.write_review
+			.button_wrap
+				.submit_btn
+					width: 100%
+
+
 
 @media only screen and (max-width: 480px)
 	.mob_menu
@@ -1343,21 +1668,62 @@
 			.send_comment
 				width: 100%
 
+	.single_news_page_wrap
+		padding: 130px 0 100px
+		.h1_title
+			font-size: 32px
+			line-height: 38px
+			margin-bottom: 30px
+		.page_wrap_content
+			.page_wrap_left
+				.form_page_title
+					font-size: 15px
+					line-height: 18px
+			.page_wrap_right
+				h2
+					font-size: 20px
+					line-height: 23px
+					margin-bottom: 15px
+				h3
+					font-size: 17px
+					line-height: 20px
+				.featured_news
+					margin-top: 45px
+					h2
+						font-size: 24px
+						line-height: 28px
+						margin-bottom: 25px
+					.news_items
+						.item
+							width: 100%
+
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px)
-	/* */
+	
+	footer
+		.footer__columns
+			.contacts_column
+				.footer_social_list
+					li
+						width: 100%
 
+.visible-xs
+	display: none !important
+
+.visible-sm
+	display: none !important
 
 /* Small Devices, Tablets */
-@media only screen and (min-width: 768px)
+@media only screen and (max-width: 768px)
 	.visible-xs
-		display: none !important
+		display: block !important
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width: 992px)
+@media only screen and (max-width: 992px)
 	.visible-sm
-		display: none !important
+		display: block !important
 
 
 /* Large Devices, Wide Screens */

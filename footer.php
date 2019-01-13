@@ -7,8 +7,8 @@
 				<div class="contacts_column">
 					<img src="img/logo.png" alt="Logo" class="footer_logo">
 					<div class="footer_contact_item"><i class="fas fa-map-marker-alt"></i> г. Москва,  ул. Кирова, 126</div>
-					<a href="+79225551234" class="footer_contact_item"><i class="fas fa-phone"></i> 7 (922) <b>555 12 34</b></a>
-					<a href="+79692561177" class="footer_contact_item"><i class="fas fa-phone"></i> 7 (969) <b>256 11 77</b></a>
+					<a href="tel:+79225551234" class="footer_contact_item"><i class="fas fa-phone"></i> 7 (922) <b>555 12 34</b></a>
+					<a href="tel:+79692561177" class="footer_contact_item"><i class="fas fa-phone"></i> 7 (969) <b>256 11 77</b></a>
 					<a href="mailto:dfc.info@gmail.com" class="footer_contact_item"><i class="fas fa-envelope"></i> dfc.info@gmail.com</a>
 				</div>
 				<div class="contacts_column">
@@ -61,12 +61,15 @@
 
 	<!-- Load Scripts Start -->
 	<script>var scr = {"scripts":[
-		{"src" : "js/libs.js", "async" : false},
+		{"src" : "https://code.jquery.com/jquery-3.2.1.js", "async" : false},
+		{"src" : "js/waypoints.min.js", "async" : false},
+		{"src" : "js/slick.min.js", "async" : false},
+		{"src" : "js/remodal.min.js", "async" : false},
 		{"src" : "js/moment.min.js", "async" : false},
 		{"src" : "js/daterangepicker.min.js", "async" : false},
 		{"src" : "js/jquery.maskedinput.min.js", "async" : false},
 		{"src" : "js/jquery.fancybox.min.js", "async" : false},
-		{"src" : "js/common.min.js?5", "async" : false},
+		{"src" : "js/common.min.js?17", "async" : false},
 		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 	</script>
 	<!-- Load Scripts End -->

@@ -5,6 +5,17 @@
 
 	<section id="page_wrap" class="page_wrap">
 		<div class="container">
+			<div class="breadcrumbs_wrap">
+				<div class="breadcrumbs" vocab="http://schema.org/" typeof="BreadcrumbList">
+					<!-- Breadcrumb NavXT 6.2.1 -->
+					<span property="itemListElement" typeof="ListItem">
+						<a property="item" typeof="WebPage" title="Главная" href="https://mydomen.com" class="home">
+							<span property="name">Главная</span>
+						</a>
+						<meta property="position" content="1">
+						</span> / Заказ
+				</div>
+			</div>
 			<div class="page_wrap_content">
 				<div class="page_wrap_left hidden-sm hidden-xs">
 

@@ -5,13 +5,24 @@
 
 	<section id="page_wrap" class="page_wrap poisk_tov">
 		<div class="container">
+			<div class="breadcrumbs_wrap">
+				<div class="breadcrumbs" vocab="http://schema.org/" typeof="BreadcrumbList">
+					<!-- Breadcrumb NavXT 6.2.1 -->
+					<span property="itemListElement" typeof="ListItem">
+						<a property="item" typeof="WebPage" title="Главная" href="https://mydomen.com" class="home">
+							<span property="name">Главная</span>
+						</a>
+						<meta property="position" content="1">
+						</span> / Заявка на Доставку товара
+				</div>
+			</div>
 			<div class="page_wrap_content">
 				<div class="page_wrap_left hidden-sm hidden-xs">
 
 				</div>
 				<div class="page_wrap_right">
 					<div class="title_wrap">
-						<h1 class="title">Заявка на Поиск товара <span><span style="font-family:RobotoCondensed">№</span>556984</span></h1>
+						<h1 class="title">Заявка на Доставку товара <span><span style="font-family:RobotoCondensed">№</span>556984</span></h1>
 						<a href="#" class="close_order">закрыть</a>
 					</div>
 					<div class="search_order_tables">
